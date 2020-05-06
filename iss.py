@@ -6,5 +6,5 @@ response = urllib.request.urlopen(req)
 
 obj = json.loads(response.read())
 
-print(obj['timestamp')
-print(obj['iss_positon']['latitude'], obj['iss_position']['longitude'])
+print(obj['timestamp'])
+print(obj['iss_position']['latitude'], obj['iss_position']['longitude'])
