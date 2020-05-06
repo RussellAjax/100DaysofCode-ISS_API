@@ -1,8 +1,8 @@
-import urllib2
+import urllib.request
 import json
 
-req = urllib2.Request("http://api.open-notify.org/iss-now.json")
-response = urllib2.urlopen(req)
+req = urllib.request.Request("http://api.open-notify.org/iss-now.json")
+response = urllib.request.urlopen(req)
 
 obj = json.loads(response.read())
 
